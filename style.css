@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=IBM+Plex+Serif:wght@600&family=Josefin+Sans&family=Shadows+Into+Light&display=swap');
+/* font-family: 'IBM Plex Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* font-family: 'Varela Round', sans-serif; */
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navigation */
+nav {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    list-style: none;
+    height: 68px;
+    color: whitesmoke;
+}
+
+nav ul li {
+    padding: 0px 14px;
+}
+
+.brand img {
+    width: 49px;
+    /* margin: 0 2px; */
+    padding: 0 7px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+/* container */
+
+.container {
+    min-height: 80vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 25px auto;
+    width: 75%;
+    border-radius: 14px;
+    padding: 24px;
+    background: url('https://avante.biz/wp-content/uploads/Romantic-Images-Hd-Wallpapers/Romantic-Images-Hd-Wallpapers-030.jpg') no-repeat center center/cover;
+    
+
+}
+
+.songItemcontainer{
+    margin-top: 39px;
+}
+
+
+.songItem{
+    height: 44px;
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    margin: 8px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    font-size: 15px;
+
+
+}
+.songItem img{
+    width: 29px;
+    margin: 0 20px;
+    border-radius: 28px;
+}
+
+.timeStamp{
+    margin: 0px 20px;
+}
+.timeStamp i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+
+/* bottom */
+
+.bottom {
+    background-color: black;
+    color: whitesmoke;
+    height: 130px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#myProgessor {
+    width: 80vw;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 12px;
+}
+
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    align-items: center;
+bottom: 12px;
+font-family: 'Varela Round', sans-serif;
+
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+
+@media(max-width:935px){
+    .songinfo{
+        position: relative;
+        left: 0;
+        margin-top: 18px;
+    }
+    
+}
+
+@media(max-width:605px){
+    .container{
+        width: 90%;
+    }
+
+    .songinfo{
+        position: relative;
+        left: 0;
+        margin-top: 18px;
+    }
+    .songItem{
+        display: flex;
+        height: 90px;
+        flex-direction: column;
+        background-color: whitesmoke;
+        color: black;
+        margin: 8px 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        font-size: 11px;
+    
+    
+    }
+    .songItem img{
+        width: 39px;
+        margin: 6px 20px;
+        border-radius: 28px;
+    }
+    
+    .timeStamp{
+        margin: 5px 20px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+}
+
+@media(max-width:302px){
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        list-style: none;
+        height: 68px;
+        color: whitesmoke;
+    }
+    
+    nav ul li {
+        padding: 0px 4px;
+    }
+    
+    .brand img {
+        width: 29px;
+        /* margin: 0 2px; */
+        padding: 0 4px;
+    
+    }
+    
+    
+}
